@@ -5,6 +5,18 @@ function that generates pascal's triangle
 
 
 def pascal_triangle(n):
+    """
+    Generates Pascal's Triangle up to the nth row.
+
+    Args:
+        n (int): Number of rows in Pascal's Triangle.
+
+    Returns:
+        list: List of lists representing Pascal's Triangle.
+
+    Raises:
+        None.
+    """
     if n <= 0:
         return []
 
