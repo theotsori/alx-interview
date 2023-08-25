@@ -2,10 +2,10 @@
 
 const request = require('request');
 
-function getMovieCharacters(movieId) {
+function getMovieCharacters (movieId) {
   return new Promise((resolve, reject) => {
     const url = `https://swapi.dev/api/films/${movieId}/`;
-    
+
     request(url, (error, response, body) => {
       if (error) {
         reject(`Error fetching data: ${error}`);
@@ -41,7 +41,7 @@ function getMovieCharacters(movieId) {
   });
 }
 
-async function main() {
+async function main () {
   if (process.argv.length !== 3) {
     console.log('Usage: node 0-starwars_characters.js <Movie ID>');
     process.exit(1);
